@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --orange: hsl(25, 97%, 55%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --grad2: hsl(215, 20%, 12%);
+}
+
+body{
+    margin:unset;
+    background-color:var(--verydarkblue);
+    font-family:'Overpass', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    margin:0 auto;
+    max-width:350px;
+    background: radial-gradient(circle at top,var(--darkblue), var(--grad2));
+    border-radius:1.5em;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.state_rating > div > img{
+    padding:0.8rem;
+    background-color: var(--darkblue);
+    border-radius:50%;
+}
+
+.state_rating > h1{
+    font-weight: 700;
+}
+
+.state_rating > p {
+    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    color:var(--lightgrey);
+}
+
+.state_rating > div.rating_buttons{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.rating_buttons > .rating_button:hover{
+    color:white;
+    background-color: var(--orange);
+}
+
+button.submit{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--orange);
+    font-weight: 400; 
+    color: white;
+    width:100%;  
+}
+
+button.submit:hover{
+    color:var(--orange);
+    background-color: white;
+}
+
+.rating_buttons .rating_button{
+    border-radius: 50%;
+    border:none;
+    background-color:var(--darkblue);
+    color:var(--lightgrey);
+    padding:0.8rem 1.1rem;
+    cursor:pointer;
+    font-weight: 700;
+}
+
+.state_thankyou{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    list-style: 1rem;
+    gap:1.1rem;
+}
+
+.state_thankyou> h1{
+    margin:.5rem;
+}
+
+.rating_score{
+    padding:.7rem 1rem;
+    color:var(--orange);
+    background-color: var(--darkblue);
+    border-radius:2rem;
+}
+
+.paragraph{
+    margin:unset;
+    text-align: center;
+}
+
+.clicked{
+    background-color: var(--lightgrey) !important;
+    color: white !important;
+}
+
+.hide{
+    display:none;
+}
+
